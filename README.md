@@ -1,14 +1,13 @@
-## Welcome to GitHub Pages
+## Welcome to my Github pages
+这里存放着一些历史记录
+点击目录跳转
 
-You can use the [editor on GitHub](https://github.com/baby00700/littlecase/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### 目录
 
 一些组建和效果
 
-[css波浪](https://baby00700.github.io/littlecase/demo/CSS%E6%B3%A2%E6%B5%AA/css%E6%B3%A2%E6%B5%AA%E6%95%88%E6%9E%9C.html)
+[1.css波浪](https://baby00700.github.io/littlecase/demo/CSS%E6%B3%A2%E6%B5%AA/css%E6%B3%A2%E6%B5%AA%E6%95%88%E6%9E%9C.html)
 
 **Bold** and _Italic_ and `Code` text
 
