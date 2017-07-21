@@ -13,7 +13,6 @@
 [4.vue](https://baby00700.github.io/littlecase/demo/vue示例/index.html)<br/>
 [5.h5上传upload](https://baby00700.github.io/littlecase/demo/upload/upload.html)<br/>
 [6.开关swicth](https://baby00700.github.io/littlecase/demo/开关swicth/index.html)<br/>
-/Users/zhaihao/Desktop/codes/littlecase/demo/开关swicth/index.html
 
 
 
