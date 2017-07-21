@@ -13,6 +13,7 @@
 [4.vue](https://baby00700.github.io/littlecase/demo/vue示例/index.html)<br/>
 [5.h5上传upload](https://baby00700.github.io/littlecase/demo/upload/upload.html)<br/>
 [6.开关swicth](https://baby00700.github.io/littlecase/demo/开关swicth/index.html)<br/>
+[7.css遮罩（webkit）](https://baby00700.github.io/littlecase/demo/webkitCSS遮罩/index.html)
 
 
 
