@@ -4,22 +4,11 @@ You can use the [editor on GitHub](https://github.com/baby00700/littlecase/edit/
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### 目录
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+一些组建和效果
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
+[css波浪](https://baby00700.github.io/littlecase/demo/CSS%E6%B3%A2%E6%B5%AA/css%E6%B3%A2%E6%B5%AA%E6%95%88%E6%9E%9C.html)
 
 **Bold** and _Italic_ and `Code` text
 
