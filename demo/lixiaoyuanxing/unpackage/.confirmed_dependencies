@@ -1,0 +1,50 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"html/tanchuxiangqing.html",
+			"js/html2canvas.js",
+			"css/index.css",
+			"js/canvas2image.js",
+			"js/mui.js",
+			"css/mui.css",
+			"js/jquery.js",
+			"json/stuinfo.json",
+			"json/liucheng.json",
+			"fonts/mui.ttf",
+			"js/ajax.js",
+			"img/yishenhe.png",
+			"img/touxiang.png",
+			"img/t3u.png",
+			"img/t2u.png",
+			"img/weishenhe.png",
+			"img/t1u.png",
+			"img/t6u.png",
+			"img/t4u.png",
+			"img/t5u.png",
+			"js/index.js",
+			"img/shoupingbg.png",
+			"html/xiangqing.html"
+		],
+		"refer": [
+			"html/tanchuxiangqing.html",
+			"html/xiangqing.html"
+		]
+	},
+	"html/tanchuxiangqing.html": {
+		"resources": [
+			"css/tanchu.css",
+			"js/mui.js",
+			"css/mui.css",
+			"js/jquery.js"
+		]
+	},
+	"html/xiangqing.html": {
+		"resources": [
+			"js/xiangqing.js",
+			"js/jquery.js",
+			"css/xiangqingye.css"
+		]
+	}
+}

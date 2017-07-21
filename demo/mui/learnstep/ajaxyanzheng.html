@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+    
+</head>
+<body>
+    <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    mui.init();
+    $(document).ready(function(){
+    	$.ajax({
+    		type:"get",
+    		url:"../json/file1.json",
+    		datatype:JSON,
+    		async:true,
+    		success:function(data){
+    			console.log("connect success");
+    			
+    			if(data!=null&&data.length>0){
+    				console.log("data!=null&&data.length>0");
+					console.log(data.length);
+					
+					for(var i=0;i<data.length;i++){
+						var name=data[i]["name"];
+						console.log(name);
+						console.log(typeof name);
+					}
+					
+    			} 
+    			
+    		}
+    	});
+    	
+    	
+    });
+    
+    </script>
+    
+    <form class="mui-input-group">
+    <div class="mui-input-row">
+        <label>用户名</label>
+    <input type="text" class="mui-input-clear" id="checkbox"> 
+    </div>
+    <div class="mui-input-row">
+        <label>密码</label>
+        <input type="password" class="mui-input-password"  >
+    </div>
+    <div class="mui-button-row">
+        <button type="button" class="mui-btn mui-btn-primary" >确认</button>
+        <button type="button" class="mui-btn mui-btn-danger" >取消</button>
+    </div>
+</form>
+
+<div class="checkwrap" style="width:100%;height:35px;">
+	<div class="msgbox" style="height:35px;line-height:35px;border:1px solid #DD524D;margin: 0 auto;margin-top:10px;background-color:#DD524D;border-radius:4px;color:#fff;text-align: center;">验证用户名</div>
+	<div class="msgbox1" style="height:35px;line-height:35px;border:1px solid #DD524D;margin: 0 auto;margin-top:10px;background-color:#DD524D;border-radius:4px;color:#fff;text-align: center;"></div>
+</div>
+
+    
+</body>
+</html>

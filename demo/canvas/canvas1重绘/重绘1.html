@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <script type="text/javascript" src="jquery.js"></script>
+        <title>canvas</title>
+</head>
+
+<body>
+   
+    <hr/>
+    <div id="box">
+    </div>
+    <div id="box1">
+    </div>
+
+    <canvas id="myCanvas" width="600" height="600" style="border:1px solid #c3c3c3;background-color:#000;cursor:none">
+        您的浏览器不支持 HTML5 canvas 标签。
+    </canvas>
+
+    <script>
+        var dd;
+        var cc;
+        $("#myCanvas").mousemove(function (e) {
+            cc = e.offsetX;
+            dd = e.offsetY;
+            $("span").text("X: " + e.pageX + ", Y: " + e.pageY);
+            $("#box1").stop().animate({
+                top: dd - 100,
+                left: cc - 100
+            }, 0);
+            document.getElementById('box1').innerHTML = cc + "-" + dd;
+        });
+
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        var xxxs = [];
+        var yyys = [];
+        var as = [];
+        var bs = [];
+
+
+        ctx.fillStyle = "rgba(255,0,0,1)";
+        function getRandom(first, last) {
+            var choice = last - first + 1;
+            return Math.floor(Math.random() * choice + first);
+        }
+
+
+        function getIndex() {
+            var arr = [0, 1];
+            var index = Math.floor((Math.random() * arr.length));
+            if (index == 0) {
+                index = -1;
+            }
+            return index;
+        }
+        function initdots() {
+            for (var i = 0; i <= 100; i++) {
+                var xxx = getRandom(1, 600);
+                xxxs.push(xxx);
+                var yyy = getRandom(1, 600);
+                yyys.push(yyy);
+                var a = getIndex();
+                as.push(a);
+                var b = getIndex();
+                bs.push(b);
+            }
+        }
+
+
+        function auto() {
+            ctx.clearRect(0, 0, 600, 600);
+            for (var i = 0; i < xxxs.length; i++) {
+              
+               ctx.fillRect(cc, dd,1, 1);
+
+                ctx.fillRect(xxxs[i], yyys[i], 2, 2);
+            }
+
+        }
+        var xv = Math.random();
+        var yv = Math.random();
+        function update() {
+            for (var i = 0; i < xxxs.length; i++) {
+                xxxs[i] += xv * as[i];
+                yyys[i] += yv * bs[i];
+                if (xxxs[i] + 15 >= c.width || xxxs[i] <= 0) {
+                    as[i] = as[i] * -1;
+
+                }
+                if (yyys[i] + 15 >= c.height || yyys[i] <= 0) {
+                    bs[i] = bs[i] * -1;
+                }
+
+            }
+
+
+        }
+        function drawLine() {
+            console.log("lineD")
+            for (var i = 0; i < xxxs.length; i++) {
+                var ccx=Math.pow((cc-xxxs[i]),2);
+                var ddy=Math.pow((dd-yyys[i]),2);
+                var zzcc = Math.sqrt(ccx + ddy);
+              
+                if (zzcc <= 180 &&zzcc >= 1) {
+                       
+                        ctx.save();
+                        ctx.beginPath();
+                        ctx.strokeStyle = "rgba(255,255,255,0.4)";
+                        ctx.lineWidth = 2;
+                        //ctx.strokeStyle= "#" + ("00000" + ((Math.random() * 16777215 + 0.1) >> 0).toString(16)).slice(-6);
+                        ctx.moveTo(xxxs[i], yyys[i]);
+                        ctx.lineTo(cc, dd);
+                        ctx.closePath();
+                        ctx.stroke();
+                        ctx.restore();
+                    }
+                for (var j = 0; j < xxxs.length; j++) {
+                    var xx = Math.pow((xxxs[i] - xxxs[j]), 2);
+                    var yy = Math.pow((yyys[i] - yyys[j]), 2);
+                    var zz = Math.sqrt(xx + yy);
+
+                    if (zz <= 60 && zz >= 1) {
+
+                        ctx.save();
+                        ctx.beginPath();
+                        ctx.strokeStyle = "rgba(255,255,255,0.4)";
+                        ctx.lineWidth = 0.5;
+                        //ctx.strokeStyle= "#" + ("00000" + ((Math.random() * 16777215 + 0.1) >> 0).toString(16)).slice(-6);
+                        ctx.moveTo(xxxs[i], yyys[i]);
+                        ctx.lineTo(xxxs[j], yyys[j]);
+                        ctx.closePath();
+                        ctx.stroke();
+                        ctx.restore();
+                    }
+                }
+            }
+        }
+
+        (function () {
+            initdots();
+            setInterval(function () {
+                auto();
+                update();
+                drawLine();
+
+            }, 1);
+        })();
+    </script>
+
+</body>
+
+</html>

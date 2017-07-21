@@ -1,0 +1,9 @@
+[  
+    {"name":"张三","email":"001@email.com","gender":"男1","hobby":["上网1","打球"]},  
+    {"name":"李四","email":"002@email.com","gender":"男2","hobby":["网购2","打球"]} ,
+    {"name":"赵五","email":"003@email.com","gender":"男3","hobby":["上网3","打球"]},  
+    {"name":"望六","email":"004@email.com","gender":"男4","hobby":["网购4","打球"]} ,
+    {"name":"哈七","email":"005@email.com","gender":"男5","hobby":["上网5","打球"]},  
+    {"name":"刘扒","email":"006@email.com","gender":"男6","hobby":["网购6","打球"]} 
+     
+]  

@@ -1,0 +1,20 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"html/tanchuxiangqing.html"
+		],
+		"refer": [
+			"html/tanchuxiangqing.html"
+		]
+	},
+	"html/tanchuxiangqing.html": {
+		"resources": [
+			"css/tanchu.css",
+			"js/mui.js",
+			"css/mui.css",
+			"js/jquery.js"
+		]
+	}
+}

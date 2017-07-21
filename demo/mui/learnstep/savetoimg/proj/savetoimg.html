@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+</head>
+<body>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/html2canvas.js"></script>
+    <script src="js/canvas2image.js"></script>
+    <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+     	$(function(){
+     		$("#butsave").click(function(){
+     			
+     			html2canvas($("#content"), {
+	                onrendered: function(canvas) {
+	                    document.body.appendChild(canvas);
+	                    var oCanvas = document.getElementById("thecanvas");
+	                    Canvas2Image.saveAsPNG(oCanvas, false, 100, 100)
+	                }
+				});
+     		});
+     		
+     	});
+       
+    </script>
+    
+    
+    <div id="content" style="width:150px;height:150px;border:1px solid #000000;background-color:#fff;">
+    	<span >
+    		hello !!
+    	</span><br />
+    	
+    </div>
+    <button id="butsave">save</button>
+     <div id="thecanvas"></div>
+    
+    
+    
+    
+</body>
+</html>

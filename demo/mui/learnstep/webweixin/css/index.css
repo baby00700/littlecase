@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	width:100%;
+	height:45px;
+	background-color:#0A3D8C;
+	color:#fff;
+	font-weight:bolder;
+	font-family: 黑体;
+	text-align: center;
+	line-height: 45px;
+	font-size:25px;
+	min-width: 300px;
+}
+
+.slider{
+	width:100%;
+	height:300px;
+	background-color:#007AFF;
+	overflow: hidden;
+}
+
+.sliderbox{
+	float:left;
+	width:100%;
+	height:300px;
+	min-height:300px;
+}
+
+.sliderbox img {
+	display: block;
+	width:100%;
+	height:300px;
+	min-height:300px;
+	min-width: 400px;
+}
+
+#box1,#box2,#box3,#box4{
+	position:relative;
+}
+
+.mui-slider-item a img{
+	height:200px;
+}
+
+.lanmu{
+	margin-top:5px;
+	width:100%;
+	
+	height:430px;
+}
+
+.lanmutop{
+	height:40px;
+	width:100%;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	position: relative;
+	background-color:#F8F8F8;
+	font-weight:bold;
+	color:#0062CC;
+	line-height: 40px;
+	
+	
+}
+
+.youjiantou{
+	float:right;
+	width:80px;
+	height:40px;
+	
+	
+}
+
+
+.zuowenzi{
+	width:90px;
+	height:38px;
+	text-align: center;
+	border-bottom:3px solid #0000FF;
+	font-weight: bolder;
+}
+
+
+.lammucon{
+	
+	min-width:400px;
+	width:100%;
+	height:100px;
+	
+}
+
+.lanmubut{
+	float:left;
+	width:25%;
+	
+	
+}
+
+.lanmuicon{
+	width:60px;
+	height:60px;
+	margin:0 auto;
+}
+
+.lanmuicon img{
+	width:60px;
+	height:60px;
+	margin:0 auto;
+	border-radius: 10px;
+	border:2px solid #ddd;
+}
+
+
+.lammuwenzi{
+	margin-top:5px;
+	margin-bottom:8px;
+	text-align: center;
+	font-size:15px;
+}
+
+.lanmu1

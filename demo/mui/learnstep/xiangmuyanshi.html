@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/xiangmuyanshi.css"/>
+</head>
+<body>
+    <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/xiangmuyanshi.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+    mui.init();
+    $.ajax({
+    	type:"get",
+    	url:"xiangmuyanshiajax.html#infolist",
+    	datatype:"html",
+    	async:true,
+    	success:function(data){
+    		$(".chacon").append(data);
+    	}
+    });
+    </script>
+    
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">进度</h1>
+    </header>
+    
+   <div class="wrap" style="margin-top:45px;">
+   		<div class="chabut"><button type="button" class="mui-btn mui-btn-blue" id="clickbut">按钮</button>
+   			<div class="chacon" >
+   				<div class="closebut">CLOSE</div>
+   				
+   				
+   			</div>
+   		</div>
+   		
+   		
+   		
+   		<div class="chabut"><button type="button" class="mui-btn mui-btn-blue" id="clickbut">按钮</button>
+   			<div class="chacon" >
+   				<div class="closebut">CLOSE</div>
+   				
+   				
+   			</div>
+   		</div>
+   </div>
+    
+    
+    
+    
+</body>
+</html>

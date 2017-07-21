@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/2d.css"/>
+    
+    
+</head>
+<body>
+    <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/2d.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+    mui.init()
+    </script>
+    
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">css2d 3d转换</h1>
+    </header>
+    
+    <div class="wrap">
+    	<div class="biaoti" id="biaoti1">translate()方法</div>
+    	<p>通过 translate() 方法，元素从其当前位置移动，根据给定的 left（x 坐标） 和 top（y 坐标）</p>
+    	<div class="box1">box0</div>
+    	<div class="box0">box1</div>
+    	
+    	<div class="biaoti">rotate() 方法</div>
+    	<p>通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。</p>
+    	
+    	<div class="box2">box1</div>
+		<div class="box3">box0</div>
+    	
+    	
+    	
+    	<div class="biaoti" style="margin-top: 30px;">scale() 方法</div>
+    	<p>通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数,包括边框和文字内容都会被拉伸为多少倍</p>
+    	<div class="box4">box0</div>
+    	<div class="box5">box0</div>
+    	
+    	
+    	<div class="biaoti" style="margin-top: 100px;">skew() 方法</div>
+    	<p>通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数</p>
+    	<div class="box6">box0</div>
+    	<div class="box7">box1</div>
+    	
+    	
+    	<div class="biaoti" style="margin-top: 100px;">matrix()方法</div>
+    	<p>matrix() 方法需要六个参数，包含数学函数，允许您：旋转、缩放、移动以及倾斜元素。</p>
+    	
+    	matrix(n,n,n,n,n,n);
+    	
+    	<div class="biaoti" style="margin-top: 100px;">rotateX,,Y,Z()方法</div>
+    	<p>perspective 属性定义 3D 元素距视图的距离，以像素计。该属性允许您改变 3D 元素查看 3D 元素的视图。
+当为元素定义 perspective 属性时，其子元素会获得透视效果，而不是元素本身
+    	perspective-origin 属性定义 3D 元素所基于的 X 轴和 Y 轴。该属性允许您改变 3D 元素的底部位置。
+当为元素定义 perspective-origin 属性时，其子元素会获得透视效果，而不是元素本身。
+注释：该属性必须与 perspective 属性一同使用，而且只影响 3D 转换元素。</p>
+    	<div class="box8">box0 rotateX()</div>
+    	<div class="boxwrap"><div class="box9">box0 rotateX()</div></div>
+    	
+    	
+    	<div class="box10">box0 rotateY()</div>
+    	<div class="boxwrap"><div class="box11">box0 rotateY()</div></div>
+    	
+    	
+    	<div class="box12">box0 rotateZ()</div>
+    	<div class="boxwrap"><div class="box13">box0 rotateZ()</div></div>
+    	
+    	<div class="biaoti" >CSS过渡-transition</div>
+    	<div class="box14wrap">
+    		<div class="box14">按住</div>
+    		
+    	</div>
+    	
+    	<div class="box15wrap">
+    		<div class="boxwrap">
+    			<div class="box15">按住</div>
+    		</div>
+    		
+    	</div>
+    	
+    	
+    </div>
+    
+</body>
+</html>

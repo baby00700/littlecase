@@ -1,0 +1,36 @@
+<html>
+    <script src="jquery.js"></script>
+    <style>
+     .box{
+         height:200px;
+         width:500px;
+         background-color:blue;
+          z-index:999;
+        
+
+     }
+
+     .showbox{
+          height:100px;
+         width:100px;
+         background-color:rebeccapurple;
+     }
+
+     
+    </style>
+    <body>
+       
+        <div class="showbox"></div>
+        <div class="box"></div>
+       
+    </body>
+    <script>
+        $(document).ready(function(){
+           $(".showbox").click(function(){
+                $(".zz").show();
+                $(".box").slideDown();
+           });
+           
+        });
+    </script>
+</html>

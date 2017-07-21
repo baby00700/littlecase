@@ -1,0 +1,49 @@
+{
+	"yingxinshouye/index.html": {
+		"resources": [
+			"yingxinshouye/images/demo1.png",
+			"yingxinshouye/images/02.png",
+			"yingxinshouye/images/newsBg.png",
+			"yingxinshouye/images/08.png",
+			"yingxinshouye/yinxin/yingxin.html",
+			"yingxinshouye/images/demo2.png",
+			"yingxinshouye/images/tibiao.png",
+			"yingxinshouye/css/global.css",
+			"yingxinshouye/images/07.png",
+			"yingxinshouye/css/index.css",
+			"yingxinshouye/js/jquery-1.8.3.min.js",
+			"yingxinshouye/images/03.png",
+			"yingxinshouye/images/tou.png",
+			"yingxinshouye/images/head.png",
+			"yingxinshouye/images/01.png",
+			"yingxinshouye/css/owl.css",
+			"yingxinshouye/images/06.png",
+			"yingxinshouye/js/owl.carousel.min.js",
+			"yingxinshouye/images/04.png",
+			"yingxinshouye/images/05.png",
+			"yingxinshouye/images/ly.png"
+		],
+		"refer": [
+			"yingxinshouye/yinxin/yingxin.html"
+		]
+	},
+	"yingxinshouye/yinxin/yingxin.html": {
+		"resources": [
+			"yingxinshouye/css/mui.css",
+			"yingxinshouye/images/lvsetongdao.png",
+			"yingxinshouye/js/yingxin.js",
+			"yingxinshouye/images/gerentubiao.png",
+			"yingxinshouye/images/wanshanxinxi.png",
+			"yingxinshouye/images/uploadimg.png",
+			"yingxinshouye/css/yingxin.css",
+			"yingxinshouye/images/liuchengtubiao.png",
+			"yingxinshouye/js/mui.js",
+			"yingxinshouye/images/chuang.png",
+			"yingxinshouye/images/down.png",
+			"yingxinshouye/images/up.png",
+			"yingxinshouye/images/jiaofei.png",
+			"yingxinshouye/images/fenpei.png",
+			"yingxinshouye/images/right.png"
+		]
+	}
+}

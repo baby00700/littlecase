@@ -1,0 +1,98 @@
+*{
+	margin:0px;
+	padding:0px;
+	
+}
+body{
+	background-color: #26558B;
+}
+.wrap{
+	width:100%;
+	
+}
+
+.com{
+	width:90%;
+	height:300px;
+	margin:0 auto;
+	margin-top:50px;
+	
+}
+
+.box{
+	width:32%;
+	height:300px;
+	border:1px solid #red;
+	float:left;
+	-webkit-box-shadow:1px 1px 6px 2px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+
+#box1{
+	background-image: url(../img/1.jpg);
+	background-size: 100% 100%;
+	margin-right:2%;
+}
+#box2{
+	background-image: url(../img/2.jpg);
+	background-size: 100% 100%;
+	margin-right:2%;
+}
+#box3{
+	background-image: url(../img/3.jpg);
+	background-size: 100% 100%;
+}
+
+@-webkit-keyframes zhezhaodh{
+	from{width:0px}
+	to{width:100%}
+}
+
+.zhezhaodh{
+	-webkit-animation: zhezhaodh 1s;
+	
+}
+
+@-webkit-keyframes zhezhaodh1{
+	from{width:100%}
+	to{width:0px}
+}
+
+.zhezhaodh1{
+	-webkit-animation: zhezhaodh1 1s;
+	
+}
+
+.zhezhao{
+	width:0%;
+	height:100%;
+	margin:0 auto;
+	border:1px solid #333;
+	background-color:rgba(0,0,0,0.6);
+	display: none;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+@-webkit-keyframes wenzidh{
+	from{top:80px}
+	to{top:100px}
+}
+
+.wenzidh{
+	-webkit-animation:wenzidh 1s;
+}
+
+.wenzi{
+	width:100%;
+	height:50px;
+	position:relative;
+	margin-top:80px;
+	text-align: center;
+	line-height: 50px;
+	font-size:25px;
+	color:#fff;
+	font-family: "微软雅黑";
+	overflow: hidden;	
+	display: none;
+}

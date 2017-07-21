@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+</head>
+<body>
+    
+    <script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+     <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    
+   	$(document).ready(function(){
+   		$("#box1").click(function(){
+   			alert("ok");
+   			htmlobj=$.ajax({
+   				type:"get",
+   				url:"../ajax/text1.txt",
+   				async:false
+   			});
+   			
+   			$("#p1").html(htmlobj.responseText);
+   		});
+   		
+   		
+   		
+   		
+   		
+   		
+	});
+
+</script>
+    <img id="images" alt="nn"/> 
+    
+  	<div id="box1" style="height:50px;width:100px;border:1px solid #0062CC">
+  		GET
+  	</div>   
+  	<p id="p1" style="margin-top:10px;">123456789</p>
+    
+    
+    
+    
+   
+    
+    
+    
+</body>
+</html>

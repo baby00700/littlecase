@@ -1,0 +1,30 @@
+.clickbut{
+	width:80px;
+	height:30px;
+	border:1px solid #000000;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.clickbut:hover{
+	background-color: #007AFF;
+	color:#fff;
+}
+
+.clickbut:active{
+	background-color: #2AC845;
+	color:#fff;
+}
+
+.tanchu{
+	height:2px;
+	width:2px;
+	border:2px solid #000000;
+	margin:0 auto;
+	margin-top:20px;
+	border-radius: 5px;
+	overflow-y:auto;
+	max-height:300px;
+	display:none;
+}

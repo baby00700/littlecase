@@ -1,0 +1,131 @@
+{
+	"index.html": {
+		"resources": [
+			"text1.txt",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"ajax/text1.txt",
+			"js/jquery.js",
+			"fonts/mui.ttf",
+			"list.html",
+			"css/index.css",
+			"js/mui.js",
+			"css/mui.css",
+			"js/index.js",
+			"learnstep/ajaxjson.html",
+			"learnstep/ajax.html",
+			"learnstep/spaub.html",
+			"learnstep/spaub.html",
+			"learnstep/webweixin/index.html",
+			"learnstep/2d3d.html",
+			"learnstep/xiangmuyanshi.html",
+			"learnstep/xiding.html",
+			"learnstep/zhuanchang.html"
+		],
+		"refer": [
+			"list.html",
+			"learnstep/ajaxjson.html",
+			"learnstep/ajax.html",
+			"learnstep/spaub.html",
+			"learnstep/webweixin/index.html",
+			"learnstep/2d3d.html",
+			"learnstep/xiangmuyanshi.html",
+			"learnstep/xiding.html",
+			"learnstep/zhuanchang.html"
+		]
+	},
+	"list.html": {
+		"resources": [
+			"js/mui.js",
+			"css/mui.css"
+		],
+		"refer": []
+	},
+	"learnstep/ajaxjson.html": {
+		"resources": [
+			"css/index.css",
+			"json/file1.json",
+			"js/index.js",
+			"js/jquery.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"learnstep/ajax.html": {
+		"resources": [
+			"index.html",
+			"ajax/text1.txt"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"learnstep/webweixin/index.html": {
+		"resources": [
+			"learnstep/webweixin/css/index.css",
+			"learnstep/webweixin/js/jquery.js",
+			"learnstep/webweixin/js/mui.js",
+			"learnstep/webweixin/js/index.js",
+			"learnstep/webweixin/img/4.jpg",
+			"learnstep/webweixin/css/mui.css",
+			"learnstep/webweixin/img/2.jpg",
+			"learnstep/webweixin/img/3.jpg",
+			"learnstep/webweixin/img/1.jpg",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"learnstep/2d3d.html": {
+		"resources": [
+			"css/2d.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/jquery.js",
+			"js/mui.js",
+			"js/2d.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"learnstep/xiangmuyanshi.html": {
+		"resources": [
+			"js/xiangmuyanshi.js",
+			"fonts/mui.ttf",
+			"learnstep/xiangmuyanshiajax.html",
+			"js/mui.js",
+			"css/xiangmuyanshi.css",
+			"js/jquery.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"learnstep/xiding.html": {
+		"resources": [
+			"css/xiding.css",
+			"js/xiding.js",
+			"img/400300.jpg",
+			"js/mui.js",
+			"css/mui.css",
+			"js/jquery.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"learnstep/zhuanchang.html": {
+		"resources": [
+			"css/zhuanchang.css",
+			"js/zhuanchang.js",
+			"js/jquery.js"
+		]
+	}
+}

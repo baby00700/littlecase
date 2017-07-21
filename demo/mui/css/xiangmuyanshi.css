@@ -1,0 +1,31 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.chacon{
+	width:1px;
+	height:1px;
+	border:1px solid #cecece;
+	margin:0 auto;
+	margin-top:15px;
+	border-radius:8px;
+	display: none;
+	-webkit-box-shadow:1px 1px 3px 2px #ddd inset;
+}
+
+.closebut{
+	width:70px;
+	height:30px;
+	border:1px solid #ddd;
+	line-height:30px;
+	text-align: center;
+	float: right;
+	border-radius: 5px;
+	-webkit-box-shadow:1px 1px 1px 1px #ddd inset;
+}
+
+.closebut:active{
+	background-color: #0062CC;
+	color:#fff;
+}

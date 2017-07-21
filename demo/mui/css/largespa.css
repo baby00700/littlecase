@@ -1,0 +1,102 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+
+.ui-loader-default{ display:none}  
+.ui-mobile-viewport{ border:none;}  
+.ui-page {padding: 0; margin: 0; outline: 0}   
+
+.wrap{
+	width:100%;
+	height:100%;
+	
+}
+.nextbut{
+	height:20px;
+	width:80%;
+	margin:0 auto;
+	border:1px solid #000080;
+	background-color: yellow;
+	cursor: pointer;
+}
+.shubox{
+	width:80%;
+	height:50px;
+	border:1px solid #000080;
+	overflow: scroll;
+	margin:0 auto;
+}
+.hengxiangbox{
+	width:540px;
+	height:100px;
+}
+.shubut{
+	width:50px;
+	height:50px;
+	border:1px solid #000;
+	margin-left: 10px;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	line-height: 50px;
+	background-color:#008000;
+}
+.shubut:hover{
+	font-size:25px;
+	color:#fff;
+}
+.page{
+	width:100%;
+	height:500px;
+	position: relative;
+	float: left;
+	font-size:100px;
+	line-height: 500px;
+	text-align: center;
+	color:red;
+	display: none;
+}
+.box{
+	width:100%;
+	height:50px;
+	background-color:red;
+}
+
+#page1{
+	background-color: #000080;
+	display: block;
+}
+#page2{
+	background-color: #00263C;
+	
+}
+#page3{
+	background-color: #007AFF;
+	
+}
+#page4{
+	background-color: #009900;
+	
+}
+#page5{
+	background-color: #00FF00;
+	
+}
+#page6{
+	background-color: #222222;
+	
+}
+#page7{
+	background-color: #5890AD;
+	
+}
+#page8{
+	background-color: #800080;
+	
+}
+#page9{
+	background-color: #000080;
+	
+}

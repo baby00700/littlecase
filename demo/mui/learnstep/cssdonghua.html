@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+   
+    
+</head>
+<style type="text/css">
+	@-webkit-keyframes go
+{
+	from{left:300px}
+	to{left:0px}
+}
+
+@-webkit-keyframes to
+{
+	from{left:0px}
+	to{left:300px}
+}
+
+	.box1{
+		width:300px;
+		height:200px;
+		border:1px solid #000;
+		background-color:red;
+		position: relative;
+		left:300px;
+
+	}
+
+	.but1{
+		width:300px;
+		height:200px;
+		border:1px solid #000;
+		background-color:green;
+
+	}
+
+	.but2{
+		width:300px;
+		height:200px;
+		border:1px solid #000;
+		background-color:blue;
+
+	}
+
+</style>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.1.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".but1").click(function(){
+			var bwidth=$(".box1").width()+1;
+			$(".box1").css("-webkit-animation","go 1s").css("left","0px").fadeOut(500);
+		});
+		$(".but2").click(function(){
+			
+			$(".box1").fadeIn(500).css("-webkit-animation","to 1s").css("left","300px");
+		});
+	});
+
+
+</script>
+
+<body>
+
+<div class="box1"></div>
+<div class="but1"></div>
+<div class="but2"></div>
+
+    
+   
+</body>
+</html>

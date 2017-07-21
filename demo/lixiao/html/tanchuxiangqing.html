@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/tanchu.css"/>
+</head>
+<body>
+    <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$(".clickbut").click(function(){
+    			$(".tanchu").show().animate({
+    				width:'95%'
+    			}).animate({
+    				height:'200px'
+    			});
+    			
+    		});
+    		
+    	});
+    </script>
+    
+    <div class="wrap">
+    	<div class="clickbut">
+    		opt
+    	</div>
+    	<div class="tanchu">
+    		<table> 
+				<tr><td>1</td></tr><tr><td>2</td></tr> 
+				<tr><td>3</td></tr><tr><td>4</td></tr> 
+				<tr><td>5</td></tr><tr><td>6</td></tr> 
+				<tr><td>7</td></tr><tr><td>8</td></tr> 
+				<tr><td>9</td></tr><tr><td>5</td></tr> 
+				<tr><td>5</td></tr><tr><td>6</td></tr> 
+				<tr><td>7</td></tr><tr><td>8</td></tr> 
+				<tr><td>9</td></tr><tr><td>10</td></tr> 
+			</table> 
+    	</div>
+    </div>
+    
+    
+</body>
+</html>
+

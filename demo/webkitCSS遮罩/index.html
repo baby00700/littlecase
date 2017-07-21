@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+   <div class="wrap">
+       <div class="but">open</div>
+       <div class="content" style="display:none">
+          <div class="con">
+              <div class="dhhx">
+                    <div class="con0" id="con1"></div>
+                    <div class="con0" id="con2"></div>
+                    <div class="con0" id="con3"></div>
+                    <div class="con0" id="con4"></div>
+                    <div class="con0" id="con5"></div>
+              </div>
+              
+
+          </div>
+       </div>
+       <div class="zhezhao" style="display:none">
+           <!-- <div class="tc" style="background-color:rgba(255,255,255,0.5);height:100%;width:100%">235 </div> -->
+           <div class="close">X</div>
+       </div>
+   </div>
+</body>
+<script> 
+
+ $(".but").click(function(){
+    $(".content").stop().fadeIn(500);
+    $(".zhezhao").stop().fadeIn(300);
+    $(this).stop().animate({
+        right:'-110px'
+    },500).addClass("butdh");
+  
+ });
+
+ $(".zhezhao").click(function(){
+     $(".content").stop().fadeOut(500);
+    $(".zhezhao").stop().fadeOut(300);
+    $(".but").stop().animate({
+        right:'30px'
+    },500,function(){
+        $(".but").removeClass("butdh");
+    });
+     
+ });
+
+   $(document).ready(function(){	
+         var a=$(window).height();
+	     var b=$(window).width();
+         $(".content").css("top",a/2-100).css("left",b/2-200);
+          function auto(a,b){
+               return 'rgba('+a+','+b+',0,0.5)';
+           }
+		  $(window).resize(function(){
+                var a=$(window).height();
+                var b=$(window).width();
+                $(".content").stop().animate({
+                        top:a/2-100,
+                        left:b/2-200
+                },100);
+            });
+        var con0height=$(".con0").height();
+   });
+</script>
+</html>

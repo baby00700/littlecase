@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/mui.css"/>
+</head>
+<body>
+    <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    mui.init()
+   
+    $(document).ready(function(){
+	   	$("#clickbotton").click(function(){
+	    		
+	    	$(".page1").show().siblings().hide();    		
+		    		
+	    });
+	    	
+	    $(".back1").click(function(){
+	    	$(".page1").hide().siblings().show();
+	    });
+	    
+	    $.ajax({
+		    			type:'get',
+		    			async:'true',
+		    			url:'../json/file1.json',
+		    			datatype:'json',
+		    			success: function  (data) 
+		    			{
+		    				var bxxx=" ";
+		    				console.log(typeof data);
+		    				console.log("connect sucess");
+		    				console.log(data.length);
+		    				
+		    				if(data!=null&&data.length>0){
+		    					for(var i=0;i<data.length;i++){
+		    						var name = data[i]["name"];
+		    						var email = data[i]["email"];
+		    						var gender = data[i]["gender"];
+		    						var hobby = data[i]["hobby"];
+		    				
+			    					bxxx='<div class="mui-card" style="top:10px;"><div class="info1">姓名： '+name+'<br/></div><div class="info1">性别：'+gender+'<br/></div><div class="info1">邮箱：'+email+'</br></div><div class="info1">爱好：'+hobby+"</div></div>"
+		    						
+		    						$("#ulbox").append(bxxx);
+		    						
+		    					}
+		    				}
+		    				
+		    			}
+		    		})
+	    
+	    
+	    
+	    
+   
+    });
+        
+    
+    </script>
+    
+<header class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">标题</h1>
+</header>
+
+<div class="con">
+	 <div id="clickbotton">
+	 	 show
+	 </div>
+	
+	 
+	 <div class="page1">
+	 	<ul id="ulbox">
+	 		
+	 	</ul>
+	 	<div class="backwrap">
+	 		<div class="back1">back</div>
+	 	</div>
+	 	
+	 </div>
+ </div>
+</body>
+</html>
+
+
