@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>class</title>
+	</head>
+	<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/vue.js" ></script>
+	
+	
+	<style type="text/css">
+		.active{
+			width:100px;
+			height:100px;
+			border:1px solid red;
+		}
+		.s{
+			color:red;
+		}
+		.d{
+			-webkit-box-shadow:1px 1px 2px 1px #000;
+		}
+	</style>
+	<body>
+		<div v-bind:style="StyleObj" id="jingtai">style对象</div>
+		<div v-bind:class="{'active':isactive,'s': hasError ,'d':isshadow}" id="classbd">class绑定</div>
+		<div id="computed"	>
+		<p>正着写{{message}}</p>
+		<p>反着写{{reversedMessage}}</p>
+		<p>字符长度{{messagelength}}</p>
+		<p>{{states}}</p>
+		<input v-model="message" type="text" />
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		new Vue({
+			el:'#jingtai',
+			data:{
+				
+				 StyleObj:{
+				 	width:'100px',
+					height:'100px',
+					color:'#0062CC',
+					border:'1px solid #000'
+				 }
+			}
+		});
+		
+		new Vue({
+			el:"#classbd",
+			data:{
+				isactive:true,
+				hasError:true,
+				isshadow:true
+			}
+		});
+	
+	
+		new Vue({
+			el:'#computed',
+			data: {
+			    message: '  '
+			  },
+			  watch:{
+			  	message:function(){
+			  		this.states="输入了问号"
+			  		this.getstates();
+			  	}
+			  },
+			  methods:{
+			  	getstates:function(){
+			  		 if (this.message.indexOf('?') === -1) {
+			  		 	this.states = '没有输入问号'
+				          return
+				        }
+			  		  this.answer = 'Thinking...'
+			  	}
+			  },
+			  computed: {
+			    // a computed getter
+			    reversedMessage: function () {
+			      // `this` points to the vm instance
+			      return this.message.split('').reverse().join('')
+			    },
+			    	
+			    messagelength:function () {
+			    	var len=this.message.length;
+			    	var innercon=this.message;
+			    	if(len>5){
+			    		var bur = true;
+			    	}
+			    	else{
+			    		var bur= false;
+			    	}
+			    	console.log(bur);
+			    	return len;
+			    }
+			    
+			  }
+			
+		});
+	</script>
+</html>
